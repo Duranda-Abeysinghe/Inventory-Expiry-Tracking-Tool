@@ -6,7 +6,7 @@ def main():
     print("=== Inventory Expiry Tracker Tool ===")
     while True:
         print("\n1. Add Product\n2. Remove Next Expiring Product\n3. Update Product Quantity\n"
-              "4. Show All Products (Order Added)\n5. Show Stock Log\n6. Export Alerts to CSV\n7. Show Products Sorted by Expiry\n8. Exit")
+              "4. Show All Products (Order Added)\n5. Show Stock Log\n6. Export Alerts to CSV\n7. Show Products Sorted by Expiry\n8. Show Expiry Analytics\n9. Export Expiry Analytics CSV\n10. Exit")
         choice = input("Enter your choice: ")
 
         if choice == "1":
@@ -31,6 +31,10 @@ def main():
         elif choice == "7":
             tool.show_sorted_by_expiry()
         elif choice == "8":
+            tool.show_expiry_analytics()
+        elif choice == "9":
+            tool.export_expiry_analytics_csv()
+        elif choice == "10":
             print("Exiting Tool...")
             break
         else:
