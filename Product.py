@@ -3,14 +3,14 @@ class Product:
         self.name = name
         self.quantity = quantity
         self.expiry_date = datetime.strptime(expiry_date, "%Y-%m-%d").date()
-        self.added_time = datetime.now()  # Track insertion order
+        self.added_time = datetime.now()  
 
     def days_until_expiry(self):
         today = datetime.today().date()
         return (self.expiry_date - today).days
 
     def _lt_(self, other):
-        # Min Heap comparison for expiry
+       
         return self.expiry_date < other.expiry_date
 
     def _str_(self):
