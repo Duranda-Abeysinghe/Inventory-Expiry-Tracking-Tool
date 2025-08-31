@@ -6,7 +6,7 @@ def main():
     print("=== Inventory Expiry Tracker Tool ===")
     while True:
         print("\n1. Add Product\n2. Remove Next Expiring Product\n3. Update Product Quantity\n"
-              "4. Show All Products (Order Added)\n5. Show Stock Log\n6. Export Alerts to CSV\n7. Show Products Sorted by Expiry\n8. Show Expiry Analytics\n9. Export Expiry Analytics CSV\n10. Exit")
+              "4. Show All Products (Order Added)\n5. Show Recent Operations\n6. Export Alerts to CSV\n7. Show Products Sorted by Expiry\n8. Show Expiry Analytics\n9. Export Expiry Analytics CSV\n10. Exit")
         choice = input("Enter your choice: ")
 
         if choice == "1":
